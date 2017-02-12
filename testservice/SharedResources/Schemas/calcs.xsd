@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="http://www.tibco.com/SimpleService/SharedResources/Schemas/calcs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.tibco.com/SimpleService/SharedResources/Schemas/calcs.xsd">
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace"/>
+	<xs:element name="Calculate">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="input"/>
+				<xs:element ref="output"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="input">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="num1" type="xs:integer"/>
+				<xs:element name="num2" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="output">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="result" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,29 @@
+Migrating Business Works 5.x projects to version 6 using arguments:: 
+[Target Project Directory: /opt/tibco/bwce/SimpleService ]
+[Source Project Directory: /opt/tibco/Tibco5X/SimpleService ]
+[Project Name: SimpleService ]
+
+2017/02/12 18:49:59 [INFO] Mapper activity "MapData" migration tasks :
+2017/02/12 18:49:59 [INFO] Creating Mapper Activity
+2017/02/12 18:49:59 [INFO] =================================================
+2017/02/12 18:49:59 [INFO] Project: SimpleService (/opt/tibco/Tibco5X/SimpleService)
+2017/02/12 18:49:59 [INFO] Migration Statistics:
+	Total Processes = 1
+	Migrated Processes = 1
+
+
+Project Migration Complete
+2017/02/12 18:49:59 [INFO] =================================================
+
+------------------ Migration Statistics ----------------
+
+Project Migration Time [Millisecond]: 12002
+
+Process Migration Time [Millisecond]
+1. /opt/tibco/Tibco5X/SimpleService/BusinessProcesses/SubProcesses/sumProcess.process: 1297
+
+Artifacts Migrated [Count]
+1. Process Migrated:1
+2. WSDL Migrated:1
+3. Schema Migrated:1
+4. XSLT Migrated:0

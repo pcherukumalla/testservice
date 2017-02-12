@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://www.tibco.com/SimpleService/SharedResources/Schemas/calcs.xsd" xmlns:tns="http://xmlns.example.com/1486611516478" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.example.com/1486611516478">
+    <import namespace="http://www.tibco.com/SimpleService/SharedResources/Schemas/calcs.xsd" location="../Schemas/calcs.xsd"/>
+    <message name="inmsg">
+        <part name="input" element="ns:input"/>
+    </message>
+    <message name="outmsg">
+        <part name="output" element="ns:output"/>
+    </message>
+    <portType name="Calcu">
+        <operation name="sumOp">
+            <input message="tns:inmsg"/>
+            <output message="tns:outmsg"/>
+        </operation>
+    </portType>
+</definitions>
