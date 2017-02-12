@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: SimpleService Application
-Bundle-SymbolicName: SimpleService.application
+Bundle-Name: Testservice Application
+Bundle-SymbolicName: testservice.application
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BWCE-Edition-Target: docker

@@ -4,11 +4,11 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.tibco.bw</groupId>
-    <artifactId>SimpleService.application.parent</artifactId>
+    <artifactId>testservice.application.parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <relativePath>../SimpleService.application.parent</relativePath>
+    <relativePath>../testservice.application.parent</relativePath>
   </parent>
-  <artifactId>SimpleService.application</artifactId>
+  <artifactId>testservice.application</artifactId>
   <packaging>bwear</packaging>
   <properties>
     <docker.property.file>docker-dev.properties</docker.property.file>

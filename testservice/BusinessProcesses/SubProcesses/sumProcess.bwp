@@ -129,7 +129,7 @@
         </schema>
     </tibex:Types>
     <tibex:ProcessInfo callable="true" createdBy="appoo9396"
-        createdOn="Sun Feb 12 18:50:08 UTC 2017" description=""
+        createdOn="Sun Feb 12 19:23:37 UTC 2017" description=""
         modifiers="public" productVersion="2.2.0 V26 2016-11-16"
         scalable="false" singleton="true" stateless="true" type="IT"/>
     <tibex:ProcessInterface context=""
@@ -384,7 +384,7 @@
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
                     eventTimeout="0" name="Start"
-                    tibex:xpdlId="4445dacb-46b0-4352-8fac-540474e6f570"
+                    tibex:xpdlId="1378f0d6-1f80-48f1-a2cf-1860747db561"
                     variable="Start" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:sources>
                         <bpws:source linkName="Start-to-MapData"/>
@@ -400,7 +400,7 @@
                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                     inputVariable="MapData-input" name="MapData"
                     outputVariable="MapData"
-                    tibex:xpdlId="612eeaee-dcaf-40f1-b054-4c317e405003" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="ff7b439e-b2d4-4d43-a88f-816b503741e4" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="Start-to-MapData"/>
                     </bpws:targets>
@@ -434,7 +434,7 @@
                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:pfx2=&quot;http://www.tibco.com/SimpleService/SharedResources/Schemas/calcs.xsd&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;1.0&quot;>&#xa;    &lt;xsl:param name=&quot;MapData&quot;/>&#xa;    &lt;xsl:template name=&quot;End-Input&quot; match=&quot;/&quot;>&#xa;        &lt;pfx2:output>&#xa;            &lt;pfx2:result>&#xa;                &lt;xsl:value-of select=&quot;$MapData/pfx2:result&quot;/>&#xa;            &lt;/pfx2:result>&#xa;        &lt;/pfx2:output>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>"
                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                     inputVariable="End-input" name="End"
-                    tibex:xpdlId="96d6fd13-45a4-4b38-927b-3efe0b77d2a7" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="09fffb6f-7161-4a1d-9283-01c06fe6f917" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="MapData-to-End"/>
                     </bpws:targets>

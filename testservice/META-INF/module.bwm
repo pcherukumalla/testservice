@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:xmlns.example.com_1486611516478="http://xmlns.example.com/1486611516478" xmi:id="_EoVt4PFUEeae9sKNUZjS7g" targetNamespace="http://tns.tibco.com/bw/composite/SimpleService" name="SimpleService" compositeext:version="1.0.0" compositeext:formatVersion="2">
-  <sca:service xmi:id="_FFxQwPFUEeae9sKNUZjS7g" name="Service.BusinessProcesses_BWServices_CalcServiceCalcu" promote="Service.BusinessProcesses_BWServices_CalcServiceComponent/Service.BusinessProcesses_BWServices_CalcServiceCalcu">
-    <sca:interface.wsdl xmi:id="_FGBIYPFUEeae9sKNUZjS7g" interface="http://xmlns.example.com/1486611516478#wsdl.interface(Calcu)" scaext:wsdlLocation="../SharedResources/WSDL/CalcAbstract.wsdl"/>
-    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_FGQY8fFUEeae9sKNUZjS7g" name="CalcuEP" targetNamespace="http://xmlns.example.com/1486611516478/CalcuEP" portTypeQName="xmlns.example.com_1486611516478:Calcu" transportBindingType="HTTP" modelVersion="1.1.0">
-      <bindingType xmi:id="_FGRAAPFUEeae9sKNUZjS7g"/>
-      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_FGRAAfFUEeae9sKNUZjS7g" endpointURI="/BusinessProcesses/BWServices/CalcService.serviceagent/CalcuEP" httpConnector="SharedResources.Connections.HTTPConnection"/>
-      <operationConfiguration xmi:id="_FGRAAvFUEeae9sKNUZjS7g" operationName="sumOp" action="/BusinessProcesses/BWServices/CalcService/CalcuEP/sumOp">
-        <bindingType xmi:id="_FGRAA_FUEeae9sKNUZjS7g"/>
-        <messageConfiguration xmi:id="_FGRABPFUEeae9sKNUZjS7g" messageQName="xmlns.example.com_1486611516478:inmsg">
-          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_FGRABfFUEeae9sKNUZjS7g" partName="input" encoding="literal"/>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:xmlns.example.com_1486611516478="http://xmlns.example.com/1486611516478" xmi:id="_wLTPsPFYEeae9sKNUZjS7g" targetNamespace="http://tns.tibco.com/bw/composite/testservice" name="testservice" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_wQFpEPFYEeae9sKNUZjS7g" name="Service.BusinessProcesses_BWServices_CalcServiceCalcu" promote="Service.BusinessProcesses_BWServices_CalcServiceComponent/Service.BusinessProcesses_BWServices_CalcServiceCalcu">
+    <sca:interface.wsdl xmi:id="_wQFpFPFYEeae9sKNUZjS7g" interface="http://xmlns.example.com/1486611516478#wsdl.interface(Calcu)" scaext:wsdlLocation="../SharedResources/WSDL/CalcAbstract.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_wQLIofFYEeae9sKNUZjS7g" name="CalcuEP" targetNamespace="http://xmlns.example.com/1486611516478/CalcuEP" portTypeQName="xmlns.example.com_1486611516478:Calcu" transportBindingType="HTTP" modelVersion="1.1.0">
+      <bindingType xmi:id="_wQLIovFYEeae9sKNUZjS7g"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_wQLIo_FYEeae9sKNUZjS7g" endpointURI="/BusinessProcesses/BWServices/CalcService.serviceagent/CalcuEP" httpConnector="SharedResources.Connections.HTTPConnection"/>
+      <operationConfiguration xmi:id="_wQLIpPFYEeae9sKNUZjS7g" operationName="sumOp" action="/BusinessProcesses/BWServices/CalcService/CalcuEP/sumOp">
+        <bindingType xmi:id="_wQLIpfFYEeae9sKNUZjS7g"/>
+        <messageConfiguration xmi:id="_wQLIpvFYEeae9sKNUZjS7g" messageQName="xmlns.example.com_1486611516478:inmsg">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_wQLIp_FYEeae9sKNUZjS7g" partName="input" encoding="literal"/>
         </messageConfiguration>
-        <messageConfiguration xmi:id="_FGRABvFUEeae9sKNUZjS7g" messageQName="xmlns.example.com_1486611516478:outmsg" messageDirection="OUTPUT">
-          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_FGRAB_FUEeae9sKNUZjS7g" partName="output" encoding="literal"/>
+        <messageConfiguration xmi:id="_wQLIqPFYEeae9sKNUZjS7g" messageQName="xmlns.example.com_1486611516478:outmsg" messageDirection="OUTPUT">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_wQLIqfFYEeae9sKNUZjS7g" partName="output" encoding="literal"/>
         </messageConfiguration>
       </operationConfiguration>
-      <outboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_FGRACPFUEeae9sKNUZjS7g" endpointURI="/BusinessProcesses/BWServices/CalcService.serviceagent/CalcuEP"/>
+      <outboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_wQLIqvFYEeae9sKNUZjS7g" endpointURI="/BusinessProcesses/BWServices/CalcService.serviceagent/CalcuEP"/>
     </scaext:binding>
-    <scact:bindingAdjunct xmi:id="_FGQY8PFUEeae9sKNUZjS7g" bindingName="CalcuEP"/>
+    <scact:bindingAdjunct xmi:id="_wQLIoPFYEeae9sKNUZjS7g" bindingName="CalcuEP"/>
   </sca:service>
-  <sca:property xmi:id="_EoVt4fFUEeae9sKNUZjS7g" name="Deployment" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt4vFUEeae9sKNUZjS7g" name="Domain" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt4_FUEeae9sKNUZjS7g" name="HawkEnabled" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt5PFUEeae9sKNUZjS7g" name="JmsProviderUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt5fFUEeae9sKNUZjS7g" name="TIBHawkDaemon" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt5vFUEeae9sKNUZjS7g" name="TIBHawkService" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt5_FUEeae9sKNUZjS7g" name="BW.APPNODE.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt6PFUEeae9sKNUZjS7g" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt6fFUEeae9sKNUZjS7g" name="BW.HOST.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt6vFUEeae9sKNUZjS7g" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt6_FUEeae9sKNUZjS7g" name="BW.MODULE.VERSION" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt7PFUEeae9sKNUZjS7g" name="BW.CLOUD.PORT" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_EoVt7fFUEeae9sKNUZjS7g" name="BW.MODULE.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:component xmi:id="_FFarcPFUEeae9sKNUZjS7g" name="Service.BusinessProcesses_BWServices_CalcServiceComponent" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_FFarcfFUEeae9sKNUZjS7g" processName="Service.BusinessProcesses_BWServices_CalcService"/>
-    <sca:service xmi:id="_FFlDgPFUEeae9sKNUZjS7g" name="Service.BusinessProcesses_BWServices_CalcServiceCalcu">
-      <sca:interface.wsdl xmi:id="_FFm4sPFUEeae9sKNUZjS7g" interface="http://xmlns.example.com/1486611516478#wsdl.interface(Calcu)" scaext:wsdlLocation="../SharedResources/WSDL/CalcAbstract.wsdl"/>
+  <sca:property xmi:id="_wLTPsfFYEeae9sKNUZjS7g" name="Deployment" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPsvFYEeae9sKNUZjS7g" name="Domain" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPs_FYEeae9sKNUZjS7g" name="HawkEnabled" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPtPFYEeae9sKNUZjS7g" name="JmsProviderUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPtfFYEeae9sKNUZjS7g" name="TIBHawkDaemon" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPtvFYEeae9sKNUZjS7g" name="TIBHawkService" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPt_FYEeae9sKNUZjS7g" name="BW.APPNODE.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPuPFYEeae9sKNUZjS7g" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPufFYEeae9sKNUZjS7g" name="BW.HOST.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPuvFYEeae9sKNUZjS7g" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPu_FYEeae9sKNUZjS7g" name="BW.MODULE.VERSION" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPvPFYEeae9sKNUZjS7g" name="BW.CLOUD.PORT" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wLTPvfFYEeae9sKNUZjS7g" name="BW.MODULE.NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_wQFCAPFYEeae9sKNUZjS7g" name="Service.BusinessProcesses_BWServices_CalcServiceComponent" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_wQFCAfFYEeae9sKNUZjS7g" processName="Service.BusinessProcesses_BWServices_CalcService"/>
+    <sca:service xmi:id="_wQFCAvFYEeae9sKNUZjS7g" name="Service.BusinessProcesses_BWServices_CalcServiceCalcu">
+      <sca:interface.wsdl xmi:id="_wQFCA_FYEeae9sKNUZjS7g" interface="http://xmlns.example.com/1486611516478#wsdl.interface(Calcu)" scaext:wsdlLocation="../SharedResources/WSDL/CalcAbstract.wsdl"/>
     </sca:service>
   </sca:component>
 </sca:composite>

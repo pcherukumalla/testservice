@@ -143,7 +143,7 @@
         </wsdl:definitions>
     </tibex:Types>
     <tibex:ProcessInfo callable="false" createdBy="appoo9396"
-        createdOn="Sun Feb 12 18:50:10 UTC 2017" description=""
+        createdOn="Sun Feb 12 19:23:37 UTC 2017" description=""
         modifiers="" productVersion="2.2.0 V26 2016-11-16"
         scalable="false" singleton="true" stateless="true" type="IT"/>
     <tibex:ProcessInterface context="" input="" output=""/>
@@ -505,7 +505,6 @@
         location="../../SharedResources/WSDL/CalcAbstract.wsdl" namespace="http://xmlns.example.com/1486611516478"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema"
         location="../../SharedResources/Schemas/calcs.xsd" namespace="http://www.tibco.com/SimpleService/SharedResources/Schemas/calcs.xsd"/>
-    
     <bpws:partnerLinks>
         <bpws:partnerLink myRole="use"
             name="Service.BusinessProcesses_BWServices_CalcServiceCalcu"
@@ -529,7 +528,7 @@
         <bpws:extension mustUnderstand="no" namespace="http://www.tibco.com/bpel/2007/extensions"/>
     </bpws:extensions>
     <bpws:scope name="sumOp">
-        <bpws:pick createInstance="yes" name="Calcu">
+        <bpws:pick createInstance="yes" name="Calcu" tibex:xpdlId="614f6db9-6a19-4046-8e0c-9a233ed2d644">
             <bpws:onMessage operation="sumOp"
                 partnerLink="Service.BusinessProcesses_BWServices_CalcServiceCalcu"
                 portType="ns2:Calcu" variable="sumOp">
@@ -545,7 +544,7 @@
                                 inputVariable="sumOpProcessInput"
                                 name="sumOpProcess"
                                 outputVariable="sumOpProcessOutput"
-                                tibex:xpdlId="84a704e8-5387-4a64-b8f5-eaf67a02e897"
+                                tibex:xpdlId="bb3fd4a1-e29c-4616-a655-19c590e30c21"
                                 type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                 <bpws:sources>
                                     <bpws:source linkName="sumOpProcess-to-sumOpResponse"/>
@@ -562,7 +561,7 @@
                             operation="sumOp"
                             partnerLink="Service.BusinessProcesses_BWServices_CalcServiceCalcu"
                             portType="ns2:Calcu"
-                            tibex:xpdlId="48393d1b-7a19-489b-a1db-d242ae2379a3" variable="sumOpReply">
+                            tibex:xpdlId="801e29b9-ec0c-414e-8c5d-e0caa94c705d" variable="sumOpReply">
                             <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:impl="http://xmlns.example.com/1486611516478" version="1.0"&gt;    &lt;xsl:param name="sumOpProcessOutput"/&gt;    &lt;xsl:template name="sumOpReply" match="/"&gt;        &lt;impl:outmsg&gt;            &lt;output&gt;                &lt;xsl:copy-of select="$sumOpProcessOutput"/&gt;            &lt;/output&gt;        &lt;/impl:outmsg&gt;    &lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                             <tibex:inputBindings>
                                 <tibex:partBinding
